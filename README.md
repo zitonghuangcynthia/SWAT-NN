@@ -61,8 +61,9 @@ In our code, we assume that the CORNN dataset is available as a Python module (e
 
 
 ## (Discussion) Compression of networks and variable input/output size
-This section explores how SWAT-NN can compress large MLPs into smaller subnetworks using the embedding-based optimization framework.
-Navigate into compress_large_NN folder
+This section explores how SWAT-NN can compress large MLPs into smaller subnetworks using the embedding-based optimization framework. We demonstrate this by decomposing a large pretrained MLP into two smaller subnetworks and then compressing them individually using a 4 hidden layer to 2 hidden layer AutoEncoder variant.
+
+Navigate into compress_large_NN folder:
 
 1. Generate a Large MLP
 ```
@@ -72,19 +73,23 @@ Generates a large MLP model and dataset.
 
 2. Split into Two Subnetworks
 ```
-python Split_small_MLP.py
+python split_small_MLP.py
 ```
 Splits the large model into two smaller subnetworks.
 **Optional:** These two steps can be skipped — we provide their checkpoints in compress_large_NN/checkpoints/.
 
 3. Compress the Subnetworks
 ```
-python ablation_study.py --cuda 0
+python main_compress.py --cuda 0
 ```
 Uses SWAT-NN to compress the two subnetworks individually.
+Note: This compression uses a different AutoEncoder from the one used in earlier sections.
+
+AutoEncoder Checkpoint (4-to-2 variant):
+Please download the pretrained 4-to-2 AutoEncoder checkpoint from the following [pretrained_4_to_2_ae.pth](https://tinyurl.com/SWAT-NN) and place it in the compress_large_NN/checkpoints/ folder.
 
 4. Visualize Output Consistency
 ```
-python ablation_scatter_plot.py
+python scatter_plot.py
 ```
 Generates scatter plots comparing predicted vs. ground truth outputs.
