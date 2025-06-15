@@ -86,7 +86,7 @@ Uses SWAT-NN to compress the two subnetworks individually.
 Note: This compression uses a different AutoEncoder from the one used in earlier sections.
 
 AutoEncoder Checkpoint (4-to-2 variant):
-Please download the pretrained 4-to-2 AutoEncoder checkpoint from the following [pretrained_4_to_2_ae.pth](https://tinyurl.com/SWAT-NN) and place it in the compress_large_NN/checkpoints/ folder.
+Please download the pretrained 4-to-2 AutoEncoder checkpoint from the following [pretrained_4_to_2_ae.pth](https://drive.google.com/file/d/1dZ9Cv47JgaFYkxJVd2aZLkqFDaYPXPmT/view?usp=drive_link) and place it in the compress_large_NN/checkpoints/ folder.
 
 4. Visualize Output Consistency
 ```
