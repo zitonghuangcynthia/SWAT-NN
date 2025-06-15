@@ -33,7 +33,7 @@ python main.py --cuda 0
 ```
 We provide a pretrained AutoEncoder checkpoint to help reproduce our results.
 The checkpoint file is not hosted in this repository, but can be downloaded from the following Google Drive link:
-[Download pretrain_ae.pth](https://tinyurl.com/SWAT-NN)
+[Download pretrain_ae.pth](https://drive.google.com/file/d/1_3XfkevazQQo0PbuM03r9msLTnSIsFYw/view?usp=drive_link)
 
 After downloading, place the file under the checkpoints/ directory:
 ```
