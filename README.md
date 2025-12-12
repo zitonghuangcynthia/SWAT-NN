@@ -1,6 +1,6 @@
 # SWAT-NN: Simultaneous Weights and Architecture Training for Neural Networks in a Latent Space
 
-This is the official repository for our paper:
+This is the official repository for our paper accepted to 2025 IEEE International Conference on Big Data:
 **"SWAT-NN: Simultaneous Weights and Architecture Training for Neural Networks in a Latent Space"**  
 [View on arXiv](https://arxiv.org/abs/2506.08270)
 
@@ -93,3 +93,5 @@ Please download the pretrained 4-to-2 AutoEncoder checkpoint from the following 
 python scatter_plot.py
 ```
 Generates scatter plots comparing predicted vs. ground truth outputs.
+
+For questions, please contact Zitong Huang chuang95@usc.edu.
